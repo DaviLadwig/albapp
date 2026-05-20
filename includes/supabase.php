@@ -79,6 +79,7 @@ function supabase_password_login(string $email, string $password): array
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => [
             'apikey: ' . $apiKey,
+            'Authorization: Bearer ' . $apiKey,
             'Content-Type: application/json',
             'Accept: application/json',
         ],
@@ -114,4 +115,3 @@ function json_response(array $data): void
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
 }
-?>
