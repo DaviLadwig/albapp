@@ -1,0 +1,20 @@
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.vercel/
+
+# Ambiente local
+.env
+.env.local
+
+# Logs e temporários
+*.log
+tmp/
+temp/
+uploads/
+
+# Dependências futuras
+vendor/
+node_modules/
